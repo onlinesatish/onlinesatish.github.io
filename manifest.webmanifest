@@ -6,11 +6,11 @@
   "background_color": "#fff",
   "This is a Github Page created by Satish (Web Designer & Developer)",
   "icons": [{
-    "src": "./assets/img/icons/onlinesatish-96x96.png",
+    "src": "./assets/img/icons/onlinesatish-touch-96x96.png",
     "sizes": "96x96",
     "type": "image/png"
   }, {
-    "src": "./assets/img/icons/onlinesatish-192x192.png",
+    "src": "./assets/img/icons/onlinesatish-touch-192x192.png",
     "sizes": "192x192",
     "type": "image/png"
   }]
