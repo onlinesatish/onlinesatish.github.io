@@ -3,15 +3,26 @@ function is_touch_enabled() {
    ( navigator.maxTouchPoints > 0 ) || 
    ( navigator.msMaxTouchPoints > 0 ); 
 } 
-   /*
-   
-   var time = 10;
-   var $bar,
-   $slick,
-   isPause,
-   tick,
-   percentTime;*/
-$(()=>{
+		$(".news__slide_wrapper").slick({
+			 infinite:true,
+			 centerMode: false,
+			 centerPadding:'0',
+			 autoplay: true,
+			 arrows: false,
+			 dots: false,
+			 slidesToShow:3,
+			 swipeToSlide:true,
+			 pauseOnHover: true,
+			 vertical: true,
+			 verticalScrolling: true,
+			 verticalSwiping:true,
+			 autoplaySpeed: 1200,
+			 useTransform: true,
+			 cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
+			 adaptiveHeight: true
+		 })
+		 
+		 $(()=>{
     var time = 5;
     var $bar,
     $slick,
