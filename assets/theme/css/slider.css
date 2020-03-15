@@ -1,16 +1,78 @@
 /*
 * slider.css
 */
-/* ====== slider__one one ============= */
+/* ====== slider__one ============= */
 .slider__one_wraper{
-background:#232f3f;
+background:#fff;
+color: purple;
 }
 .slider__one_wraper 
 .slider__one{
 overflow:hidden;
 }
 
-/* ----- slider__one dots ------ */
+/* ----- slider__one slides and items ------ */
+.slider__one 
+.slider__one_item{
+width:100%;
+height:20rem;
+overflow:hidden;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.slider__one_item 
+.slider__one_layer{
+width:100%;
+height:100%;
+background:rgba(250,250,250,.9);
+/*background:rgba(14,22,173,.65);
+/*background-image:linear-gradient(to bottom right,rgba(255,0,249,0.5),rgba(14,22,173,0.5));*/
+}
+
+
+/*  shorthand => animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state. */
+
+/* ----- animation on slider__one items ------ */
+.slider__one_layer 
+.slider__one_slide{
+	font-family:"panton_bold" !important;
+	opacity:0;
+	padding:40px;
+	width:100%;
+	height:20rem;
+	/*color:#fff;*/
+	z-index:2;
+	/*text-shadow:2px 2px 5px #000;*/
+}
+
+/* action on activate slide */
+/* add .slick-active class in .slider__one_layer */
+.slick-active 
+.slider__one_slide {
+	opacity:1;
+}
+
+.slick-active 
+.slider__one_slide 
+.slider__one_header1{
+	animation:fadeInDown 1s both 1s;
+}
+.slick-active 
+.slider__one_slide 
+.slider__one_header2{
+	animation:fadeInUp 1s both 1.3s;
+}
+.slick-active 
+.slider__one_slide 
+.slider__one_info{
+	animation:fadeInUp 1s both 1.6s;
+}
+/* ----- //slider__one slides and items ------ */
+
+
+
+/* ----- //slider__one dots ------ */
 .slider__one 
 .slick-dots {
 display: -webkit-box;
@@ -33,8 +95,9 @@ height: .75rem;
 padding: 0;
 border: none;
 border-radius: .75rem;
-background-color: #bbb;
-transition:width .3s;
+background:purple;
+bx-shadow:0 0 5px rgba(0,0,0,.5);
+        transition:width .3s;
 text-indent: -9999px;
 }
 .slider__one 
@@ -53,7 +116,7 @@ bottom:-2.5px;
 font:1.75rem/1.75rem FontAwesome;
 border:none;
 font-weight:bold;
-color:#aaa;
+/*color:#aaa;*/
 z-index:2;
 background:transparent;
 margin:0 .5rem;
@@ -73,7 +136,8 @@ content:'\f0a9';
         font:1.75rem/1.75rem FontAwesome;
         border:none;
         font-weight:bold;
-        color:#aaa;
+        color:purple;
+        /*text-shadow:0 0 5px rgba(0,0,0,.5);*/
         z-index:2;
         background:transparent;
         margin:0 .5rem;
@@ -97,7 +161,7 @@ content:'\f0a9';
        font:1.4rem/1.4rem FontAwesome;
        border:none;
        font-weight:bold;
-       color:#aaa;
+       color:;
        z-index:2;
        background:transparent;
        margin-left:1rem;
@@ -119,86 +183,10 @@ content:'\f0a9';
        bottom:27.5px;
        width: 0%;
        height: 3px;
-       background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));
+       background:linear-gradient(to right,rgba(255,255,255,0),hsla(310,25%,50%,.95));
        }
        /* ----- //slider__one progress ----- */
        
-
-/* ----- slider__one slides and items ------ */
-.slider__one 
-.slider__one_item{
-width:100%;
-height:20rem;
-overflow:hidden;
-background-position:center;
-background-repeat:no-repeat;
-background-size:cover;
-}
-.slider__one_item 
-.slider__one_layer{
-width:100%;
-height:100%;
-background:rgba(0,0,0,.65);
-/*background:rgba(14,22,173,.65);
-/*background-image:linear-gradient(to bottom right,rgba(255,0,249,0.5),rgba(14,22,173,0.5));*/
-}
-
-
-/*  shorthand => animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state. */
-
-/* ----- animation on slider__one items ------ */
-.slider__one_layer 
-.slider__one_slide{
-	font-family:"panton_bold" !important;
-	opacity:0;
-	padding:40px;
-	width:100%;
-	height:20rem;
-	color:#fff;
-	z-index:2;
-	text-shadow:2px 2px 5px #000;
-}
-
-/* action on activate slide */
-/* add .slick-active class in .slider__one_layer */
-.slick-active 
-.slider__one_slide {
-	opacity:1;
-}
-.slider__one_slide 
-.slider__one_header1{
-	animation:fadeOutRight 2s both .3s;
-	font:40px/50px RalewayR;
-	color: #fd0;
-}
-.slider__one_slide 
-.slider__one_header2{
-	animation:fadeOutRight 2s both .3s;
-	font:30px/35px RalewayB;
-	color:lime;
-}
-.slider__one_slide 
-.slider__one_info{
-	animation:fadeOutRight 2s both .3s;
-	font:20px/25px RalewayB;
-	color:cyan;text-align:justify;
-}
-.slick-active 
-.slider__one_slide 
-.slider__one_header1{
-	animation:fadeInDown 1s both .5s;
-}
-.slick-active 
-.slider__one_slide 
-.slider__one_header2{
-	animation:fadeInUp 1s both 1s;
-}
-.slick-active 
-.slider__one_slide 
-.slider__one_info{
-	animation:fadeInUp 1s both 1.5s;
-}
-/* ----- //slider__one slides and items ------ */
 
 
         
@@ -272,7 +260,7 @@ height: 1rem;
 padding: 0;
 border: none;
 border-radius: 100%;
-background-color: #bbb;
+background: #bbb;
 text-indent: -9999px;
 }
 .vendor__slider 
