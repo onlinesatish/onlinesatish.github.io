@@ -1,0 +1,13 @@
+{
+  "name": "Online Satish Github Page",
+  "short_name": "OnlineSatish",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff",
+  "This is a Github Page created by Satish (Web Designer & Developer)",
+  "icons": [{
+    "src": "https://onlinesatish.github.io/assets/img/icons/skwebs-64x64-3.88k.png",
+    "sizes": "64x64",
+    "type": "image/png"
+  }]
+}
